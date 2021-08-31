@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tvAssetID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/enter_asset_id_if_asset_id_is_20309_then_just_enter_last_three_digit_309"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/edtAssetID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/tvAssetID"
+            android:gravity="center_vertical"
+            android:hint="309"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvMacID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtAssetID"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/enter_mac_id_must_be_in_this_format_e0_d3_4c_75_99_19_and_alphabet_must_be_capital_letters_for_find_mac_id_use_help_of_admin_login_and_got_to_asset_sections"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <EditText
+            android:id="@+id/edtMacID"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/tvMacID"
+            android:digits="0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:hint="F3:01:AD:51:E9:2E"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:id="@+id/llFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtMacID"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvConnect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/edtMacID"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@color/login_app_gredient_color_two"
+                android:gravity="center"
+                android:text="Connect"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvDisConnect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/login_app_gredient_color_two"
+                android:gravity="center"
+                android:text="Disconnect"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/prgBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFirst"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLockStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prgBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="Lock Status"
+            android:textSize="@dimen/_18sdp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

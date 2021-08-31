@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AxaLockLibs</string>
+
+    <string name="enter_mac_id_must_be_in_this_format_e0_d3_4c_75_99_19_and_alphabet_must_be_capital_letters_for_find_mac_id_use_help_of_admin_login_and_got_to_asset_sections">Enter Mac ID(Must be in this format F3:01:AD:51:E9:2E and alphabet must be capital letters).</string>
+    <string name="enter_asset_id_if_asset_id_is_20309_then_just_enter_last_three_digit_309">Enter Asset ID (If asset id is 20309 then just enter last three digit 309)</string>
+</resources>
