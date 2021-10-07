@@ -107,6 +107,28 @@
             android:text="Lock Status"
             android:textSize="@dimen/_18sdp" />
 
+        <EditText
+            android:id="@+id/edtMacID1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/tvLockStatus"
+            android:digits="0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:text="D9:A1:63:3D:E7:7A"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/edtMacID2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/edtMacID1"
+            android:digits="0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:text="E8:BE:CC:35:4E:41"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_14sdp" />
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

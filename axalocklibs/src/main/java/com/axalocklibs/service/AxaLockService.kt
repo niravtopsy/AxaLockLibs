@@ -189,7 +189,7 @@ class AxaLockService : Service() {
         Log.d(TAG, "Trying to create a new connection.")
         mBluetoothDeviceAddress = address
         mConnectionState = STATE_CONNECTING
-        //        device.createBond();
+//                device.createBond();
         return true
     }
 
